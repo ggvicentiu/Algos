@@ -21,7 +21,7 @@ namespace Graphs
                 }
             }
 
-            //enqueue the extremities, if any
+            //enqueue the vertices without incoming edges, if any
             for (int i = 0; i < N; i++) if (indegree[i] == 0) queue.Enqueue(i);
 
             while (queue.Count > 0)
