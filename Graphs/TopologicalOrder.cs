@@ -4,7 +4,7 @@ namespace Graphs
 {
     public class TopologicalOrder
     {
-
+        //Kahn's Algorithm 
         internal static List<int> DoTopologicalSort(Graph graph) {
             var queue = new Queue<int>();
             List<int> topologicalOrder = new List<int>();
